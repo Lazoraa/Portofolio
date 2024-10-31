@@ -1,0 +1,299 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #252B48;
+    height: 100px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.keterangan {
+    margin-right: auto;
+    font-family: poppins, sans-serif;
+    font-weight: 800;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.keterangan:hover {
+    color: #F7E987;
+}
+
+nav ul {
+    display: flex;
+    padding: 20px;
+    font-family: poppins, sans-serif;
+    flex-wrap: wrap; /* Allow the items to wrap onto multiple lines */
+}
+
+li {
+    list-style-type: none;
+    padding: 5px;
+    margin: 15px;
+}
+
+a {
+    color: #F7E987;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    color: #445069;
+}
+
+.btn-cta {
+    margin-right: 20px;
+    border: none;
+    font-size: 20px;
+    padding: 6px 12px;
+    border-radius: 15px;
+    background-color: #5B9A8B;
+    color: white;
+    font-family: poppins, sans-serif;
+    font-weight: 800;
+    cursor: pointer;
+    transition: ease-in-out 0.5s;
+}
+
+.btn-cta:hover {
+    background-color: #F7E987;
+    color: #445069;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.judul {
+    font-family: poppins, sans-serif;
+    font-weight: 400;
+    margin-top: 20px;
+    color: black;
+    margin-top: 30px;
+}
+
+.deskripsi {
+    margin-top: auto;
+    font-family: poppins, sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    color: #252B48;
+}
+
+.content-container {
+    width: 100%;
+}
+
+.wrapper {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 100%;
+    max-width: 1080px; /* Set a maximum width for larger screens */
+    height: auto;
+    background-color: #252B48;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 5px 5px 18px black;
+}
+
+.judul-content {
+    font-size: 12px;
+    font-family: Monserrat, sans-serif;
+    font-weight: 800;
+    color: white;
+}
+
+.ui-gambar {
+    margin: 5px;
+    width: 100%;
+    height: auto;
+}
+
+.deskrpsi-content {
+    padding: 0;
+    margin: 10px;
+    color: #F7E987;
+    font-family: Monserrat, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.profil-container {
+
+    width: 100%;
+    height: auto;
+    margin-top: 80px;
+    background-color: #252B48;
+    display: flex;
+    justify-content: center;
+}
+
+.gambar {
+
+    width: 100%;
+    height: auto;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+.img-container {
+    width: 100%;
+    height: 70%;
+}
+
+.paragraf {
+    margin-left: 20px;
+    height: auto;
+    align-items: center;
+}
+
+.text1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: poppins, sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    word-spacing: 5px;
+    color: white;
+    font-family: Monserrat, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.card3 {
+    width: 100%;
+    max-width: 600px; /* Set a maximum width for larger screens */
+    height: auto;
+    background-color: #252B48;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 5px 5px 18px black;
+    margin-bottom: 70px;
+}
+
+.ui-gambar3 {
+    cursor: pointer;
+    margin: 10px;
+    width: 100%;
+    height: auto;
+}
+
+.ui-gambar3:hover {
+    margin: 0;
+    width: 105%;
+    height: 105%;
+}
+
+.footer {
+    position: bottom;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem;
+    background: #252B48;
+    color: #F7E987;
+    font-family: poppins, sans-serif;
+    font-size: 20px; /* Adjust the font size for better mobile readability */
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+/* Media query for small screens (e.g., mobile devices) */
+@media only screen and (max-width: 600px) {
+    header {
+        height: auto; /* Adjust height as needed */
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    li {
+        margin: 5px;
+    }
+
+    .btn-cta {
+        margin-right: 0;
+    }
+
+    .intro {
+        padding: 20px;
+    }
+
+    .judul {
+        font-size: 24px; /* Adjust font size as needed */
+    }
+
+    .deskripsi {
+        font-size: 20px; /* Adjust font size as needed */
+    }
+
+    .card,
+    .card3 {
+        width: 100%;
+        max-width: none;
+    }
+
+    .gambar,
+    .ui-gambar,
+    .ui-gambar3 {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .paragraf {
+        margin-left: 0;
+    }
+
+    .text1,
+    .text {
+        font-size: 20px; /* Adjust font size as needed */
+    }
+
+    .footer {
+        position: relative;
+    }
+} 
